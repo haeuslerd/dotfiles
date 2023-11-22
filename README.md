@@ -70,3 +70,17 @@
 
 # ToggleTerm
     :ToggleTerm to open terminal
+
+# GIT WORKFLOW
+cd directory to where repo should be stored
+git clone "url to existsing repo"
+git switch -c clear-terminal -> create a new branch
+git add terminal.lua -> adding file to source control
+git commit -m "clear terminal on windows" -> commiting file to source control
+git push origin -u clear-terminal -> push all commits to source control
+
+ ## Local repository
+cd directory to where repo is stored
+git remote add origin https://github.com/haeuslerd/dotfiles.git -> create empty repo and add it
+git branch -M main
+git push origin main
