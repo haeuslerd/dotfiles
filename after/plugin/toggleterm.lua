@@ -1,8 +1,11 @@
 require("toggleterm").setup{
-	size = 10,
-	direction = 'float',
+	direction = 'horizontal',
+	--size= 20,
 	autochdir = true, 
-	float_opts = {
-		border = 'curved'
-	}
+	--float_opts = {
+	--	border = 'curved'
+	--},
+	--vim.o.columns * 0.4,
+    width = 20,
+	height = 10
 }
