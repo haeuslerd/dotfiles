@@ -1,26 +1,31 @@
 # KEYBINDINGS
-    :q to exiting
-    :w to save
-    :wq to save and exit
-    :q! to exit without saving
-    :colorscheme to change colorscheme
-    i change to insert mode
-    esc for exiting insert mode
-    v in normal mode -> mark text for copying
-    r in NERDTree to refresh directory
-    :term to open terminal
-    CTRL + W + W to switch between windows
-    CTRL + W + V to split window vertically
-    CTRL + W + S to split window horizontally
-    CTRL + W + Q to close window
-    SHIFT + <> for shifting forward/backwards
-    / search for text, not case sensitive with corect set -> Press Enter -> n for forward search/ N for backwards search
-    :s%/search_word/replace_word/g -> search and replace in entire file
-    :s/search_word/replace_word -> replace in single line
-    :buffers to show all buffers
-    :bd [nr] to remove buffer from list
-    :b [nr] to navigate to buffer
-    :bn navigate to next buffer
+:q to exiting
+:w to save
+:wq to save and exit
+:q! to exit without saving
+:colorscheme to change colorscheme
+i change to insert mode
+esc for exiting insert mode
+v in normal mode -> mark text for copying
+r in NERDTree to refresh directory
+:term to open terminal
+CTRL + W + W to switch between windows
+CTRL + W + V to split window vertically
+CTRL + W + S to split window horizontally
+CTRL + W + Q to close window
+SHIFT + <> for shifting forward/backwards
+/ search for text, not case sensitive with corect set -> Press Enter -> n for forward search/ N for backwards search
+:s%/search_word/replace_word/g -> search and replace in entire file
+:s/search_word/replace_word -> replace in single line
+:buffers to show all buffers
+:bd [nr] to remove buffer from list
+:b [nr] to navigate to buffer
+:bn navigate to next buffer
+
+## MARCOS
+    qw start recording
+    q end recording
+    10@w play recording for 10 lines
 
 ## NORMAL MODE
     dd delete line/ d4 + arrow done deletes 4 lines
@@ -72,15 +77,15 @@
     :ToggleTerm to open terminal
 
 # GIT WORKFLOW
-cd directory to where repo should be stored
-git clone "url to existsing repo"
-git switch -c clear-terminal -> create a new branch
-git add terminal.lua -> adding file to source control
-git commit -m "clear terminal on windows" -> commiting file to source control
-git push origin -u clear-terminal -> push all commits to source control
-
- ## Local repository
-cd directory to where repo is stored
-git remote add origin https://github.com/haeuslerd/dotfiles.git -> create empty repo and add it
-git branch -M main
-git push origin main
+    - cd directory to where repo should be storedgit
+    - git clone "url to existsing repo"
+    - git switch -c clear-terminal -> create a new branch
+    - git add terminal.lua -> adding file to source control
+    - git commit -m "clear terminal on windows" -> commiting file to source control
+    - git push origin -u clear-terminal -> push all commits to source control
+    - 
+    -  ## Local repository
+    - cd directory to where repo is stored
+    - git remote add origin https://github.com/haeuslerd/dotfiles.git -> create empty repo and add it
+    - git branch -M main
+    - git push origin main
