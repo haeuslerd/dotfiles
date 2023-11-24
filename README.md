@@ -89,3 +89,8 @@
     - git remote add origin https://github.com/haeuslerd/dotfiles.git -> create empty repo and add it
     - git branch -M main
     - git push origin main
+
+## FUGITIVE
+    :Git add ./ or file name
+    :Git commit -m "commit message"
+    :Git push origin branch_name
