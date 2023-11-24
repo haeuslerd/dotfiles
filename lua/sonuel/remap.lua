@@ -50,7 +50,7 @@ vim.cmd([[
 	nnoremap <C-Right> :bnext<CR>
 	
 	" Remap :ToggleTerm to :term
-	nnoremap <C-t> :term<CR>
+	" nnoremap <leader>t> :ToggleTerm<CR>
 	" Remap <> for shift back/forward
 	" nnoremap <>
 ]])

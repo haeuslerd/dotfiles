@@ -13,12 +13,7 @@ return require('packer').startup(function(use)
 	use({ 
 		'rose-pine/neovim', 
 		as = 'rose-pine',
-		--config = function()
-		--	dark_variant = 'moon'
-		--	vim.cmd('colorscheme rose-pine')
-		--end
 	})
-
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('theprimeagen/harpoon')
 	use('github/copilot.vim')
@@ -53,6 +48,7 @@ return require('packer').startup(function(use)
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
 		require("toggleterm").setup()
 	end}
+	use("tpope/vim-fugitive")
 	use {
 		"folke/which-key.nvim",
 		config = function()
