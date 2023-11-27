@@ -21,7 +21,9 @@
     :bd [nr] to remove buffer from list
     :b [nr] to navigate to buffer
     :bn navigate to next buffer
-
+    :%bd delete all buffers
+    CTRL + d half page down
+    CTRL + u half page up
 ## MARCOS
     qw start recording
     q end recording
