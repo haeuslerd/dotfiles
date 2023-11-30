@@ -43,7 +43,7 @@
     :PackerUpdate
     :PackerClean
     :PackerStatus
-    :PackerSync
+    :PackerSync run when new plugin is added
 
     :checkhealth treesitter/telescope to check if everything is working
 
