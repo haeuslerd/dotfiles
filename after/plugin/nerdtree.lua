@@ -1,4 +1,3 @@
-
 -- NERDTree key mappings
 vim.api.nvim_set_keymap('n', '<C-f>', ':NERDTreeFocus<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-n>', ':NERDTree<CR>', { noremap = true })
@@ -29,8 +28,8 @@ vim.g.NERDTreeColorMapCustom = {
 
 -- Open NERDTree automatically
 vim.cmd([[
-  autocmd StdinReadPre * let s:std_in=1
-  autocmd VimEnter * NERDTree C:\
+ " autocmd StdinReadPre * let s:std_in=1
+ " autocmd VimEnter * NERDTree C:\
   let NERDTreeMinimalUI=1
 ]])
 
