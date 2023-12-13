@@ -97,3 +97,8 @@
     :Git add ./ or file name
     :Git commit -m "commit message"
     :Git push origin branch_name
+
+## WEZTERM
+    CTRL + w to close wezterm
+    CTRL + SHIFT + c to copy
+    CTRL + SHIFT + v to paste
