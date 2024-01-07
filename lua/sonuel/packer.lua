@@ -1,8 +1,21 @@
-vim.cmd [[packadd packer.nvim]]
+local ensure_packer = function()
+	local fn = vim.fn
+	local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+	if fn.empty(fn.glob(install_path)) > 0 then
+		fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+		vim.cmd [[packadd packer.nvim]]
+		return true
+	end
+	return false
+end
+
+local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
+	-- My plugins here
+	-- use 'foo1/bar1.nvim'
+	-- use 'foo2/bar2.nvim'
 
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.4',
@@ -10,12 +23,19 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+	use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
+	use {
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		requires = { {"nvim-lua/plenary.nvim"} }
+	}
+
 	use({ 
 		'rose-pine/neovim', 
 		as = 'rose-pine',
 	})
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-	use('theprimeagen/harpoon')
+	--use('theprimeagen/harpoon')
 	use('github/copilot.vim')
 	use('mbbill/undotree')
 	use {
@@ -61,11 +81,10 @@ return require('packer').startup(function(use)
 			}
 		end
 	}
-	--use {
-	--	'goolord/alpha-nvim',
-	--	requires = { 'nvim-tree/nvim-web-devicons' },
-	--	config = function ()
-	--		require'alpha'.setup(require'alpha.themes.startify'.config)
-	--	end
-	--}
+
+	-- Automatically set up your configuration after cloning packer.nvim
+	-- Put this at the end after all plugins
+	if packer_bootstrap then
+		require('packer').sync()
+	end
 end)

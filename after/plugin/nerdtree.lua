@@ -9,6 +9,7 @@ vim.api.nvim_set_keymap('n', '<C-t>', ':NERDTreeToggle<CR>', { noremap = true })
 vim.g.NERDTreeGitStatusWithFlags = 1
 vim.g.NERDTreeIgnore = { '^node_modules$' }
 vim.g.NERDTreeShowBookmarks = 1
+vim.g.NERDTreeShowHidden = 1
 -- Uncomment and modify the following lines as needed
 --[[
 vim.g.WebDevIconsUnicodeDecorateFolderNodes = 1
