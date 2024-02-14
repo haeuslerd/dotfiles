@@ -18,6 +18,8 @@ vim.api.nvim_set_keymap('n', '<C-y>', '<C-r>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-a>', 'ggVG', { noremap = true })]]--
 
 vim.cmd([[
+	"Remap <leader> to space
+	let mapleader = "\<Space>"
 	" Remap Ctrl+C for copy
 	nnoremap <C-c> "+y
 	vnoremap <C-c> "+y
@@ -48,7 +50,12 @@ vim.cmd([[
 	" Remap to navigate buffers 
 	nnoremap <C-Left> :bprevious<CR>
 	nnoremap <C-Right> :bnext<CR>
-	
+
+	" Remap dd to black hole register
+	nnoremap dd "_dd
+	vnoremap d "_d
+	nnoremap dw "_dw
+
 	" Remap :ToggleTerm to :term
 	" nnoremap <leader>t> :ToggleTerm<CR>
 	" Remap <> for shift back/forward

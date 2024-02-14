@@ -101,4 +101,4 @@
 ## WEZTERM
     CTRL + w to close wezterm
     CTRL + SHIFT + c to copy
-    CTRL + SHIFT + v to paste
+    CTRL + SHIFT + v to paste 
