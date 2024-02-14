@@ -24,6 +24,8 @@
     :%bd delete all buffers
     CTRL + d half page down
     CTRL + u half page up
+    :vs to split vertically
+    :sp to split horizontally
 ## MARCOS
     qw start recording
     q end recording
