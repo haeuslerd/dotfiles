@@ -9,7 +9,7 @@ lsp.ensure_installed({
 	'eslint',
 	'jsonls',
 	'sqlls',
-	'volar'
+	'volar',
 })
 
 -- Fix Undefined global 'vim'

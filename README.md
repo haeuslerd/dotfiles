@@ -26,6 +26,8 @@
     CTRL + u half page up
     :vs to split vertically
     :sp to split horizontally
+    g* go to defintion
+    
 ## MARCOS
     qw start recording
     q end recording
